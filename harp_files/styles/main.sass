@@ -1,0 +1,170 @@
+@import 'reset'
+
+ul.social
+  margin-top: .4rem
+  text-align: center
+  
+  li
+    display: block
+    font-size: 3rem
+    
+            
+header
+  display: grid
+  grid-template-columns: repeat(12,1fr)
+  max-width: 120rem
+  margin: auto
+  padding-bottom: 1.6rem
+  margin-bottom: 2rem
+  
+  div
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    
+    &.data-personal
+      grid-column-start: 2
+      grid-column-end: 8
+      text-align: left
+      
+      h1
+        margin-bottom: .8rem
+      
+    &.data-contact
+      grid-column-start: 11
+      grid-column-end: 12
+      text-align: right
+      
+section
+  max-width: 120rem
+  margin: 0 auto
+  .section-title
+    display: grid
+    grid-template-columns: 1fr 11fr
+    
+    h3
+      font-weight: 600
+      grid-column-start: 2
+      grid-column-end: 12
+      margin-bottom: 2.8rem
+      text-align: left
+      text-transform: uppercase
+
+
+.work-experince
+  display: grid
+  margin-bottom: 4rem
+  grid-template-columns: 1fr 10fr 1fr
+  grid-template-rows: 42px 1fr
+  
+  .work-duration
+    grid-column-start: 1
+    grid-column-end: 2
+    grid-row-start: 1
+    grid-row-end: 3
+    font-size: .9em
+  
+  .work-title
+    grid-column-start: 2
+    grid-column-end: 3
+    grid-row-start: 1
+    grid-row-end: 2
+    text-align: left
+    
+    p.company
+      font-size: .75em
+      font-weight: 600
+      letter-spacing: .2em
+      text-transform: uppercase
+      
+    p.title
+      font-weight: 700
+    
+  .work-website
+    grid-column-start: 3
+    grid-column-end: 4
+    grid-row-start: 1
+    grid-row-end: 2
+    text-align: right
+  
+  .work-description
+    grid-column-start: 2
+    grid-column-end: 3
+    grid-row-start: 2
+    grid-row-end: 3
+    margin-top: 1.2rem
+    text-align: left
+    > p
+      grid-column-start: 2
+      grid-column-end: 12
+      
+    ul
+      display: flex
+      margin-top: 1.2rem
+      
+      li
+        font-size: 1.2rem
+        background: rgba($grey, .5)
+        color: #fff
+        border-radius: .3rem
+        padding: .4rem .8rem
+        margin: 0 .4rem
+        
+        &:first-of-type
+          margin-left: 0
+        
+        &:last-of-type
+          margin-right: 0
+      
+section.education
+  
+  .work-experince
+    
+    .work-website
+      text-align: center
+      
+      p
+        margin: 0
+        
+        span
+          display: inline
+          font-size: .8em
+          margin-left: .4rem
+            
+        &:first-of-type
+          font-weight: 600
+          font-size: .8em
+          
+section.idioms
+  
+  .section-content
+    display: grid;
+    grid-template-columns: 1fr 11fr
+
+    ul.idiom-list
+      grid-column-start: 2
+      grid-column-end: 12
+      text-align: left
+      display: grid
+      grid-template-columns:  repeat(11, 1fr)
+      
+      li
+        
+        p.lang
+          font-weight: 600
+          letter-spacing: .2em
+            
+        &:nth-of-type(1)
+          grid-colum-start: 2
+          grid-colum-end: 3
+        &:nth-of-type(2)
+          grid-colum-start: 3
+          grid-colum-end: 4
+        &:nth-of-type(3)
+          grid-colum-start: 4
+          grid-colum-end: 5
+        &:nth-of-type(4)
+          grid-colum-start: 5
+          grid-colum-end: 6
+  
+  
