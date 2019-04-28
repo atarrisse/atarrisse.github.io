@@ -1,0 +1,203 @@
+{
+  "personal": {
+    "name": "Ana Tarrisse",
+    "phone": "+55 21 999962313",
+    "email": "atarrisse@gmail.com",
+    "idioms": [
+      {
+        "language": "portuguese",
+        "acronym": "PT",
+        "level": "fluent"
+      },
+      {
+        "language": "english",
+        "acronym": "EN",
+        "level": "fluent"
+      },
+      {
+        "language": "french",
+        "acronym": "FR",
+        "level": "B1"
+      },
+      {
+        "language": "german",
+        "acronym": "DE",
+        "level": "A2.2"
+      }
+    ]
+  },
+  "social": [
+    {
+      "company": "linkedin",
+      "url": "https://www.linkedin.com/in/atarrisse",
+      "title": "linkedin.com/in/atarrisse",
+      "icon": "fa-linkedin"
+    },
+    {
+      "company": "github",
+      "url": "https://github.com/atarrisse",
+      "title": "github.com/atarrisse",
+      "icon": "fa-github-square"
+    }
+  ],
+  "work": [
+    {
+      "company": {
+        "name": "Comida da Gente",
+        "site": "www.comidadagente.org"
+      },
+      "role": {
+        "title": "Business Analyst & Operations Manager",
+        "description": "As Operations Manager for Comida da Gente, I’ve managed and run several collaborative purchases from small local producers. I took care of organizing the logistics for the purchases, which included gathering people, making sure the purchase everything went smoothly for consumers and producers, overseeing the deliveries and keep an eye on the pick-ups. Alongside with the CEO, we’ve co-managed the operations and communication team. From customer service to negotiating with the producers, all tasks had to be done. Every now and then some crisis handling had to be done due to unexpected situations. I could experiment with different service design ideas to improve the consumer's experience. The closeness to the users made it easy to get feedback and come up with new ideas and solutions. As Business Analyst I would evaluate the producer's performance and experiment with new strategies. I'd look for new producers as well as welcome and support new producers when joining the community. I' keep an eye on their sales performance and analyze it. Whenever need, we'd come up with new strategies for each producer individually on how to improve. All the data was inputed on Spreadsheets and I came to develop scripts to aid some tasks.",
+        "stack": ["Spreadsheet",  "Design Thinking", "Crisis Handling", "Service Design", "Adobe Illustrator", "Adobe Photoshop", "Google App Scripts", "JS"]
+      },
+      "period": {
+        "start": "Nov/2016",
+        "end": "Jun/2017"
+      }
+    },
+    {
+      "company": {
+        "name": "Comida da Gente",
+        "site": "www.comidadagente.org"
+      },
+      "role": {
+        "title": "Product Designer",
+        "description": "My role in the Comida da Gente platform began as a part of my graduation project in Design, which was the design of an online platform that would comprehend the necessities of the initiative. The project itself was highly praised and got the maximum grade. From February to November I worked alone on all the tasks regarding the structuring of the platform. I got to do some borad research (collaborative economy, organic produces), user research (interviewing producers, consumers, working alongside producers), interviews with stakeholders, user journey, information architecture (using object-oriented paradigm), strategy, navigation, sketches, wireframes, high-fidelity prototyping (HTML/JS/SASS), heuristics, usability tests (nine tests, within an age and familiarity with technology range).",
+        "stack": ["Adobe Illustrator", "Adobe Photoshop", "HTML (Pug)", "CSS (Sass)", "JS (jQuery)", "Usability Test", "Information Architecture", "User Research"]
+      },
+      "period": {
+        "start": "Jun/2015",
+        "end": "Nov/2016"
+      }
+    },
+    {
+      "company": {
+        "name": "Huge Inc",
+        "site": "http://www.hugeinc.com/"
+      },
+      "role": {
+        "title": "Product Designer",
+        "description": "Huge is an agency focused on developing digital solutions capable of delivering good experiences and improving people’s quality of life. At the agency the deliverables were high fidelity prototypes and I started out as an intern working on those prototypes. From Jade (HTML) and Sass (CSS), the projects started getting more complicated and we could experiment with other tools, such as HarpJS, Grunt, Gulp. I got involved with over 5 projects, including Galeão International Airport, shopping center company Multiplan and pro-bono donation platform E-Solidario. Other than my proper job, I also ran an English Club, lunch-time-gatherings during which only English was allowed. We would talk about any subject as long as it was in English, so everyone would get some practice.",
+        "stack": ["JS (jQuery)", "HTML (Pug)", "CSS (Sass)", "Git", "Gulp", "Grunt", "HarpJS", "Node"]
+      },
+      "period": {
+        "start": "Jun/2015",
+        "end": "Nov/2016"
+      }
+    }
+  ],
+  "sideProjects": [
+    {
+      "company": {
+        "name": "Threadless",
+        "site": "https://www.threadless.com/"
+      },
+      "role": {
+        "title": "Artist",
+        "description": "I was the winner of the Laundy Bag Challenge with a functional design intended to aid people when washing their own clothes. The design is being sold worldwide printed and many different products."
+      },
+      "period": {
+        "start": "Oct/2017"
+      }
+    },
+    {
+      "company": {
+        "name": "Smart Living Challenge"
+      },
+      "role": {
+        "title": "Product Designer",
+        "description": "The SLC is a initiative from the Swedish Institute held in 3 cities worldwide in 2015. The theme for Rio was mobility and it began with an open call for ideas, from which the 6 participants would be selected. Throughout 12 weeks we had several meetings, some of them with Hyper Island (Swedish consulting company), and worked on designing a scalable and modular conceptual project that could be implemented in the Federal University main campus in Rio. We had input from a very broad and fresh research about mobility in the campus. During the 12 weeks we analyzed the data and found out which issues were more urgent. We came up with a unified system of campus related information that would contemplate all its particularities. By the end of the process we presented it at the Embassy of Sweden in Brasília to relevant authorities on the field. Also, the Swedish Institute presented it as a part of their main presentation at the Sustainable Innovation Forum in Paris (COP21).",
+        "stack": ["Design Thinking", "Product Design", "Adobe Illustrator", "Adobe Photoshop", "HTML (Pug)", "CSS (Sass)", "JS (jQuery)", "Entreperneurship"]
+      },
+      "period": {
+        "start": "Jun/2015",
+        "end": "Sep/2016"
+      }
+    }
+  ],
+  "talks": [
+    {
+      "company": {
+        "name": "Interaction South America 2017",
+        "site": "http://isa.ixda.org/2017/"
+      },
+      "role": {
+        "title": "From Chaos to Order",
+        "description": "I made a apresentation about the applicaton of Object-Oriented UX methodology on the design and information architecture for the Comida da Gente platform. It's consequences and advantages for complex, modular and extensible information systems."
+      },
+      "period": {
+        "start": "Nov/2017"
+      }
+    },
+    {
+      "company": {
+        "name": "The Developer's Conference 2017",
+        "site": "http://www.thedevelopersconference.com.br/tdc/2017/index.html"
+      },
+      "role": {
+        "title": "Cataloguing the Chaos",
+        "description": "Presented to designers and developers how the design and information architecture for the Comida da Gente platform was built, following the Object Orientations paradigm. It's consequences and advantages for complex, modular and extensible information systems."
+      },
+      "period": {
+        "start": "Jul/2017"
+      }
+    },
+    {
+      "company": {
+        "name": "WIAD Rio 2017"
+      },
+      "role": {
+        "title": "Small Producer's Catalogue",
+        "description": "I had the chance to give a lecture at the World Information Architecture Day in Rio and tell about a case of use of Object-Oriented User Experience explored on the development of the Catalogue functionality for the Comida da Gente platform."
+      },
+      "period": {
+        "start": "Feb/2017"
+      }
+    }
+  ],
+  "education": [
+    {
+      "company": {
+        "name": "UFRJ",
+        "site": "http://www.poli.ufrj.br/"
+      },
+      "role": {
+        "title": "BA Electronics and Computing Engineering",
+        "description": "During my time studying engineering I got involved in several extra activities. I organized events, such as \"Electronics Week\", with lectures and workshops for students of the Electronics Department. Also organized Summer Courses for the community, of subjects such as Arduino. I worked as professor assistant for the subjects of Technical Drawing for over 2 years and Electronics III for a semester."
+      },
+      "period": {
+        "start": "Mar/2008",
+        "end": "Jun/2016"
+      }
+    },
+    {
+      "company": {
+        "name": "ESDI / UERJ",
+        "site": "http://www.poli.ufrj.br/"
+      },
+      "role": {
+        "title": "BA Design",
+        "description": "From the begining I got involved with the school, becoming class representative. I had the opportunity of being part os extra-curricular acitivities, such as being staff of the IV International Congress of Research in Design in 2017, as well as of the exhibit Japanese Design Today 100, both under supervision of professors from the university. I've also worked as a teacher's assistant for the class of Photography I and Photography II in 2010."
+      },
+      "period": {
+        "start": "Nov/2015",
+        "end": "Mar/2006"
+      }
+    },
+    {
+      "company": {
+        "name": "Goldsmiths College",
+        "site": "http://www.gold.ac.uk/"
+      },
+      "role": {
+        "title": "BA Creative Computing",
+        "description": "I've been awarded a full-scholarship from the Brazilian Government, within the Science Without Borders program to attend Goldsmiths College for one full year. There, during the summer, I assist PhD student Nicky Donald to develop his project. We worked with Arduino, Processing, Java and DMX to build an interactive room in the university's attic."
+      },
+      "period": {
+        "start": "Jan/2013",
+        "end": "Dez/2013"
+      }
+    }
+  ]
+}

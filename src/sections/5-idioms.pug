@@ -1,0 +1,11 @@
+if data.personal.idioms
+  section
+    .section-title
+      h2 Idioms
+
+    .section-content
+      ul.idiom-list
+        each idiom in data.personal.idioms
+          li.idiom
+            p.lang(title=idiom.language)= idiom.acronym
+            p.level= idiom.level

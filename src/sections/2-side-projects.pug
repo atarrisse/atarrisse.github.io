@@ -1,0 +1,8 @@
+if data.sideProjects
+  section
+    .section-title
+      h2 Side Projects
+
+    .section-content
+      each experience in data.sideProjects
+        +addExperience(experience)

@@ -1,0 +1,20 @@
+mixin addExperience(experience)
+  .experience
+    .experience__duration
+      p= experience.period.start
+      if(experience.period.start !== experience.period.end)
+        p= experience.period.end
+    .experience__title
+      if(experience.company.site)
+        a(target="_blank" href=experience.company.site)
+          h3.experience__company= experience.company.name
+      else
+          h3.experience__company= experience.company.name
+      h4.experience__role= experience.role.title
+    .experience__extra
+    .experience__description= experience.role.description
+
+      if experience.role.stack
+        ul.experience__tools
+          each item in experience.role.stack
+            li= item

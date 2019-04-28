@@ -1,0 +1,8 @@
+if data.education
+  section
+    .section-title
+      h2 Education
+
+    .section-content
+      each experience in data.education
+        +addExperience(experience)

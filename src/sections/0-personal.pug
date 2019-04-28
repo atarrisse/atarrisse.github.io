@@ -1,0 +1,13 @@
+section.section--personal
+  .personal
+    h1= data.personal.name
+    p.phone= data.personal.phone
+    p.email= data.personal.email
+
+  if data.social
+    ul.social
+     each social in data.social
+      li
+        a(target="_blank" href=social.url title=social.title)
+          i.fab(class=social.icon)
+

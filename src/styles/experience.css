@@ -1,0 +1,45 @@
+.experience {
+  display: grid;
+  margin-bottom: 4rem;
+  grid-template: 1fr 10fr 1fr / 42px 1fr;
+  grid-template-areas:
+    'duration title extra'
+    '. description description';
+};
+
+.experience__duration { grid-area: duration; }
+.experience__title { grid-area: title; }
+.experience__extra { grid-area: extra; }
+.experience__description { grid-area: description; }
+
+.experience__company {
+  font-size: .75em;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.experience__role {
+  font-weight: 700;
+}
+
+.experience__description {
+  text-align: left;
+}
+
+.experience__tools {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+  margin-left: -0.4rem;
+}
+
+.experience__tools li {
+  background: rgba(var(--grey-rgba), 0.5);
+  border-radius: .3rem;
+  color: #fff;
+  cursor: default;
+  font-size: 1.2rem;
+  margin: 0 .4rem .4rem;
+  padding: 0.4rem 0.8rem;
+}

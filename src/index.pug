@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=UA-107556420-1")
+    script(type="text/javascript").
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-107556420-1');
+
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro")
+    link(rel="stylesheet" href="./style.css")
+
+  body
+    include ./sections/addExperience
+    include ./sections/0-personal
+    include ./sections/1-work
+    include ./sections/2-side-projects
+    include ./sections/3-talks
+    include ./sections/4-education
+    include ./sections/5-idioms
+    script(defer='', src='https://use.fontawesome.com/releases/v5.8.1/js/brands.js', integrity='sha384-rUOIFHM3HXni/WG5pzDhA1e2Js5nn4bWudTYujHbbI9ztBIxK54CL4ZNZWwcBQeD', crossorigin='anonymous')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.8.1/js/fontawesome.js', integrity='sha384-EMmnH+Njn8umuoSMZ3Ae3bC9hDknHKOWL2e9WJD/cN6XLeAN7tr5ZQ0Hx5HDHtkS', crossorigin='anonymous')

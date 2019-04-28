@@ -1,0 +1,8 @@
+if data.work
+  section
+    .section-title
+      h2 Work
+
+    .section-content
+      each experience in data.work
+        +addExperience(experience)
