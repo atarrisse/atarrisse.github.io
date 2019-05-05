@@ -3,10 +3,18 @@
   display: grid;
   margin-bottom: 4rem;
   grid-gap: 0.8rem;
-  grid-template: 4.2rem 1fr / 1fr 10fr 1fr;
+  grid-template: auto auto auto / 3fr 1fr;
   grid-template-areas:
-    'duration title extra'
-    'duration description description';
+    'duration duration'
+    'title extra'
+    'description description';
+
+  @media screen and (min-width: $max-page-1){
+    grid-template: 4.2rem 1fr / 1fr 10fr 1fr;
+    grid-template-areas:
+      'duration title extra'
+      '. description description';
+  }
 };
 
 .experience__duration { grid-area: duration; }
@@ -23,9 +31,25 @@
 
 .experience__duration {
   display: flex;
-  flex-direction: column;
   font-size: 0.9em;
-  justify-content: space-between;
+
+  @media screen and (min-width: $max-page-1){
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.experience__duration-time {
+  @media screen and (max-width: $max-page-0){
+    &:last-of-type:not(:first-of-type) {
+      &:before {
+        content: 'to';
+        display: inline-block;
+        font-size: 0.8em;
+        margin: 0 0.4rem;
+      }
+    }
+  }
 }
 
 .experience__title {
@@ -36,7 +60,7 @@
 }
 
 .experience__role {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .experience__description {

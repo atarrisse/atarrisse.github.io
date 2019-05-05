@@ -1,9 +1,9 @@
 mixin addExperience(experience)
   .experience
     .experience__duration
-      p= experience.period.start
-      if(experience.period.start !== experience.period.end)
-        p= experience.period.end
+      p.experience__duration-time= experience.period.start
+      if(experience.period.end && experience.period.start !== experience.period.end)
+        p.experience__duration-time= experience.period.end
     .experience__title
       if(experience.company.site)
         a(target="_blank" href=experience.company.site)
@@ -12,7 +12,7 @@ mixin addExperience(experience)
           h3.experience__company= experience.company.name
       h4.experience__role= experience.role.title
     .experience__extra
-    .experience__description= experience.role.description
+    .experience__description !{experience.role.description}
 
       if experience.role.stack
         ul.experience__tools

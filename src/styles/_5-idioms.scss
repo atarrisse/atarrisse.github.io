@@ -1,0 +1,45 @@
+.section--idioms {
+  .section-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+
+    @media screen and (min-width: $max-page-1) {
+      grid-template-columns: 1fr 11fr;
+      grid-template-areas: ". content";
+    }
+  }
+}
+
+.idiom-list {
+  grid-area: content;
+
+  @media screen and (min-width: $max-page-1) {
+    display: flex;
+  }
+}
+
+.idiom {
+  align-items: baseline;
+  display: flex;
+
+  @media screen and (min-width: $max-page-1) {
+    &:not(:last-of-type) {
+      &:after {
+        content: "|";
+        font-weight: 300;
+        margin: 0 0.8rem;
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+.lang {
+  margin-right: 0.4rem;
+}
+
+.level {
+  font-size: 0.9em;
+  font-weight: 300;
+}
