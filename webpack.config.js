@@ -1,27 +1,35 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const settings = require('./package.json');
-const data = require('./data.json');
+
+const settings = require("./package.json");
+const data = require("./data.json");
 
 module.exports = {
-  mode: 'development',
-  devtool: 'inline-source-map',
-  entry: './src/index.js',
+  mode: "development",
+  devtool: "inline-source-map",
+  entry: "./src/index.js",
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: "bundle.js",
+    path: path.resolve(__dirname, "dist")
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: "./dist"
   },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: settings.title,
-      template: './src/index.pug'
-    })
+      template: "./src/index.pug"
+    }),
+    new MiniCssExtractPlugin({
+      // Options similar to the same options in webpackOptions.output
+      // both options are optional
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+  })
   ],
   module: {
     rules: [
@@ -30,13 +38,13 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'html-loader',
+            loader: "html-loader",
             options: {
-              attrs: ['img:src', 'img:srcset', 'source:src', 'source:srcset'],
-            },
+              attrs: ["img:src", "img:srcset", "source:src", "source:srcset"]
+            }
           },
           {
-            loader: path.resolve('webpack/loaders/pug-html-loader'),
+            loader: path.resolve("webpack/loaders/pug-html-loader"),
             options: {
               cache: true,
               data: {
@@ -47,14 +55,17 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: ['style-loader', 'css-loader']
+        test: /\.scss$/,
+        use: [
+          process.env.NODE_ENV !== 'production' ? 'style-loader' : MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader"
+        ]
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
         exclude: /node_modules/,
-        use: ['file-loader']
+        use: ["file-loader"]
       }
     ]
   }

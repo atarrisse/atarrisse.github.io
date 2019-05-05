@@ -13,6 +13,11 @@ body {
   text-align: center;
   text-rendering: optimizeLegibility;
   width: 90%;
+
+  @media screen and (max-width: $max-page-0) {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
 }
 
 h1 {
@@ -23,6 +28,11 @@ h1 {
 
 h3 {
   font-weight: 300;
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
 }
 
 ul {
@@ -40,14 +50,14 @@ a {
   line-height: 1em;
   text-decoration: none;
   transition: color 0.3s ease-out;
-}
 
-a:hover {
-  color: rgba(var(--grey-rgba), .75);
-}
+  &:hover {
+    color: rgba(var(--grey-rgba), .75);
+  }
 
-a i {
-  color: var(--grey);
+  i {
+    color: var(--grey);
+  }
 }
 
 p {

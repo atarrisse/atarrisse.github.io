@@ -1,10 +1,12 @@
 .experience {
+
   display: grid;
   margin-bottom: 4rem;
-  grid-template: 1fr 10fr 1fr / 42px 1fr;
+  grid-gap: 0.8rem;
+  grid-template: 4.2rem 1fr / 1fr 10fr 1fr;
   grid-template-areas:
     'duration title extra'
-    '. description description';
+    'duration description description';
 };
 
 .experience__duration { grid-area: duration; }
@@ -17,6 +19,20 @@
   font-weight: 600;
   letter-spacing: .2em;
   text-transform: uppercase;
+}
+
+.experience__duration {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  justify-content: space-between;
+}
+
+.experience__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
 }
 
 .experience__role {

@@ -1,6 +1,6 @@
 section {
   margin: 0 auto;
-  max-width: 120rem;
+  max-width: 100rem;
 }
 
 
@@ -11,8 +11,15 @@ section {
 
 .section-title h2 {
   font-weight: 600;
-  grid-column: 2 / 12;
+  grid-column: 1 / 12;
   margin-bottom: 2.8rem;
   text-align: left;
   text-transform: uppercase;
+}
+
+@media screen and  (min-width: 102.4em) {
+  .section-title h2 {
+    grid-column: 2 / 12;
+    margin-left: 0.8rem;
+  }
 }

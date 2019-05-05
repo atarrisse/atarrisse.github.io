@@ -1,0 +1,39 @@
+///
+/// removes the unit from the value
+/// @example strip-unit(10px) => 10
+///
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+///
+/// make a property fluid
+/// @param {string} $property: padding, margin, font-size...
+/// @param {number} $min-vw: minimum viewport
+/// @param {number} $max-vw: maximum viewport
+/// @param {number} $min-size: minimum measure for property
+/// @param {number} $max-size: maximum measure for property
+/// @output font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+/// @link https://css-tricks.com/snippets/css/fluid-typography/
+///
+@mixin fluid($property, $min-vw, $max-vw, $min-size, $max-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-size);
+  $u4: unit($max-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      #{$property}: $min-size;
+      @media screen and (min-width: $min-vw) {
+        #{$property}: calc(
+          #{$min-size} + #{strip-unit($max-size - $min-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
+      }
+      @media screen and (min-width: $max-vw) {
+        #{$property}: $max-size;
+      }
+    }
+  }
+}

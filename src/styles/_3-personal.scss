@@ -1,0 +1,44 @@
+.section--personal {
+  display: grid;
+  grid-template: 1fr 1fr / 1;
+  grid-template-areas:
+    'personal'
+    'social';
+  max-width: 100rem;
+  margin: auto;
+  margin-bottom: auto;
+  padding-bottom: 1.6rem;
+  margin-bottom: 2rem;
+
+  @media screen and (min-width: $max-page-1){
+    grid-template: 1fr / 11fr 1fr;
+    grid-template-areas: 'personal social';
+  }
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  grid-area: personal;
+  text-align: left;
+}
+
+.social {
+  display: flex;
+  grid-area: social;
+  text-align: right;
+
+  li {
+    display: block;
+    font-size: 3.2rem;
+
+    &:not(:last-child) {
+      margin-right: 0.8rem;
+    }
+  }
+
+  @media screen and (min-width: $max-page-1){
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
