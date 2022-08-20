@@ -1,8 +1,12 @@
+@import "../../styles/_mixin";
+ 
 .skills {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  grid-column: 2 / 3;
   line-height: 1.8em;
+  margin-top: 1rem;
   gap: 1rem 0.5rem;
   width: 100%;
 }

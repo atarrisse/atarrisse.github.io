@@ -1,0 +1,61 @@
+@import "../../styles/_mixin";
+
+.sectionTitle {
+  margin: 0;
+  width: 100%;
+
+  @include devices(fromDesktop) {
+    @include grid;
+  }
+}
+
+@include devices(fromDesktop) {
+  .subtitle {
+    order: 1;
+  }
+
+  .title {
+    order: 2;
+  }
+}
+
+.title {
+  font-size: 2.2rem;
+  line-height: 1em;
+
+  @include devices(toTablet) {
+    font-size: 1.2em;
+    gap: 0.8rem;
+  }
+
+  @include devices(fromDesktop) {
+    grid-row: 1 / 2;
+  }
+}
+
+.subtitle {
+  font-size: 0.9em;
+  line-height: 1;
+
+  @include devices(fromDesktop) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.grade {
+  font-weight: 700;
+  grid-row: 1 / 3;
+  grid-column: 3 / 4;
+  text-align: right;
+
+  span {
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-left: 0.5ch;
+  }
+
+  @include devices(fromDesktop) {
+    grid-row: 1 / 3;
+  }
+}

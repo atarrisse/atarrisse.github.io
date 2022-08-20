@@ -37,3 +37,19 @@
   gap: 0.5rem 1rem;
   grid-template-columns: 1fr 10fr 1fr;
 }
+
+@mixin extraSection {
+  flex-grow: 1;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: inside;
+    margin-top: 0.5rem;
+
+    li::marker {
+      font-size: 0.7em;
+    }
+  }
+}

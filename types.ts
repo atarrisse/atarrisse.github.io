@@ -51,7 +51,7 @@ export enum SKILLS {
   DATA_VISUALIZATION = "Data Visualization"
 }
 
-type TDeltaTime = {
+export type TDeltaTime = {
   from: Date;
   to: Date | null;
 }
