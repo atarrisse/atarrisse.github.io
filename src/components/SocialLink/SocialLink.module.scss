@@ -1,0 +1,15 @@
+@import "../../styles/_mixin";
+ 
+.socialLink {
+  align-items: center;
+  display: flex;
+  font-size: 2.4rem;
+  justify-content: center;
+  gap: 1em;
+  height: 1em;
+  width: 1em;
+
+  @include devices(toTablet) {
+    font-size: 4rem;
+    }
+}

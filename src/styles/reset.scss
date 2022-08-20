@@ -1,0 +1,75 @@
+@import "./mixin";
+
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+
+body {
+  background: var(--grey-300);
+  color: var(--grey-800);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  padding: 5rem 0rem 10rem;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  width: 90%;
+
+  @include devices(toTablet) {
+    font-size: 2rem;
+  }
+}
+
+main {
+  margin: auto;
+  max-width: 120rem;
+}
+
+h1 {
+  font-size: 6.5rem;
+  line-height: 1em;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    line-height: 1.2em;
+  }
+}
+
+  
+a {
+  color: var(--grey-600);
+  font-style: normal;
+  line-height: 1em;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  
+  @include hover {
+    color: var(--grey-800);
+  }
+}
+
+    
+p {
+  font-size: inherit;
+  line-height: 1.5em;
+  margin: 0;
+}
+    
+button {
+  // appearance: none;
+  // border: 0;
+  // background-color: transparent;
+  // display: contents;
+  font-size: inherit;
+  text-align: left;
+}

@@ -1,0 +1,61 @@
+@import "../../styles/_mixin";
+
+.section {
+  display: flex;
+  flex-direction: column;
+
+  @include devices(toTablet) {
+    margin-bottom: 5rem;
+  }
+  
+  @include devices(fromDesktop) {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    row-gap: 3rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+.title {
+  grid-column: 2 / 3;
+  text-align: left;
+
+  @include devices(toTablet) {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  @include devices(fromDesktop) {
+    font-size: 2.8rem;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  
+  @include devices(toTablet) {
+    gap: 5rem;
+  }
+
+  @include devices(fromDesktop) {
+    gap: 5rem;
+    grid-column: 1 / 3;
+  }
+}
+
+.language {
+  display: flex;
+  
+  @include devices(fromDesktop) {
+    gap: 2rem;
+    grid-column: 2 / 3;
+  }
+
+  strong {
+    margin-right: 1ch;
+  }
+}
