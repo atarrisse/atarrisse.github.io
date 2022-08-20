@@ -12,7 +12,14 @@ const demodern: TJob = {
     SKILLS.TYPESCRIPT, SKILLS.JAVASCRIPT, SKILLS.HTML, SKILLS.CSS, SKILLS.STYLED_COMPONENTS, SKILLS.REACT, SKILLS.REST_API, SKILLS.NEXT_JS, SKILLS.STRAPI, SKILLS.NODE, SKILLS.ZUSTAND, SKILLS.GITLAB
   ]),
   presentations: [
-    "Internal: React, the good bits", "Internal: Git basics"
+    {
+      event: "Internal",
+      title: "React, the good bits"
+    },
+    {
+      event: "Internal",
+      title: "Git basics"
+    },
   ],
 }
 
@@ -28,7 +35,18 @@ const workAndCo: TJob = {
     SKILLS.TYPESCRIPT, SKILLS.JAVASCRIPT, SKILLS.HTML, SKILLS.CSS, SKILLS.SASS, SKILLS.STYLED_COMPONENTS, SKILLS.TAILWIND, SKILLS.REACT, SKILLS.REST_API, SKILLS.NEXT_JS, SKILLS.STRAPI, SKILLS.NODE, SKILLS.REDUX, SKILLS.GATSBY, SKILLS.ANGULAR, SKILLS.GRAPH_QL, SKILLS.RTL, SKILLS.RTL, SKILLS.ENZYME, SKILLS.JEST, SKILLS.GITHUB, SKILLS.GITLAB
   ]),
   presentations: [
-    "Internal: Gatbsy", "Internal: Flutter", "Internal: Watson Assistance"
+    {
+      event: "Internal",
+      title: "Gatsby"
+    },
+    {
+      event: "Internal",
+      title: "Flutter"
+    },
+    {
+      event: "Internal",
+      title: "Watson Assistant"
+    },
   ],
   extracurricular: [
     "Accessibility Advocate",
@@ -60,9 +78,18 @@ const comidaDaGente: TJob = {
 By the end of 2015, I also became part of the company's operations and business team, being responsible for captivating the community inside and outside social networks. I was able to grow the number of members from 6k to 44k and to engage over 20 new producers. I was responsible for the logistics of hundreds of collective purchases, created documents' templates to help community members, as well as coded some scripts to automate some of the work.`,
   skills: new Set([SKILLS.OOUX, SKILLS.UX, SKILLS.USABILITY_TEST, SKILLS.SHEETS, SKILLS.UI, SKILLS.IA, SKILLS.ADOBE_ILLUSTRATOR, SKILLS.DESIGN_THINKING]),
   presentations: [
-    "World Information Architecture Day 2017: OOUX: Catálogo Comida da Gente",
-    "The Developers' Conference 2017: Catalogando o Caos: criação de um catálogo para pequenos produtores",
-    "Interaction South America 2017: From Chaos to Order, a catalogue for Small Producers"
+    {
+      event: "World Information Architecture Day 2017",
+      title: "OOUX: Catálogo Comida da Gente"
+    },
+    {
+      event: "The Developers' Conference 2017",
+      title: "Catalogando o Caos: criação de um catálogo para pequenos produtores"
+    },
+    {
+      event: "Interaction South America 2017",
+      title: "From Chaos to Order, a catalogue for Small Producers"
+    },
   ]
 }
 

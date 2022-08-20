@@ -21,16 +21,18 @@ const SectionItem: React.FC<TSectionItem & TSection> = ({ title,
   extracurricular,
   presentations
 }) => {
+  const hasOneDate = (dates instanceof Date);
   return (
     <div className={styles.sectionItem} key={title}>
       <div className={styles.button}>
-        <div className={styles.timeframe}>
+        <div className={styles.timeframe} data-only-child={hasOneDate}>
           {
-            !(dates instanceof Date) &&
-            <>
-              <p>{formatDate(dates.to)}</p>
-              <p>{formatDate(dates.from)}</p>
-            </>
+            hasOneDate
+              ? <p>{dates.getFullYear()}</p>
+              : <>
+                <p>{formatDate(dates.to)}</p>
+                <p>{formatDate(dates.from)}</p>
+              </>
           }
         </div>
         <h4 className={styles.title}>
@@ -49,17 +51,20 @@ const SectionItem: React.FC<TSectionItem & TSection> = ({ title,
           (presentations || extracurricular) &&
           <div className={styles.extras}>
             {presentations &&
-              <div className={styles.extra}>
+              <div className={styles.extraSection}>
                 <h5>Presentations</h5>
                 <ul>
-                  {presentations.map(extra => (
-                    <li key={extra}>{extra}</li>
+                  {presentations.map(presentation => (
+                    <li key={presentation.title}>
+                      <small>{presentation.event} | </small>
+                      {presentation.title}
+                    </li>
                   ))}
                 </ul>
               </div>
             }
             {extracurricular &&
-              <div className={styles.extra}>
+              <div className={styles.extraSection}>
                 <h5>Other activities</h5>
                 <ul>
                   {extracurricular.map(extra => (

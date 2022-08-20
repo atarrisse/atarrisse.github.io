@@ -15,7 +15,7 @@ CV's project in which I implement practices that went well in previous projects.
 - [x] NVM + Node version
 - [x] Linter
 - [x] Prettier
-- [ ] Github pages
+- [x] Github pages
 - [ ] Husky
 - [ ] Axe A11y tests
 - [ ] Unit tests with Jest and RTL

@@ -61,6 +61,11 @@ type TGrade = {
   total: number;
 }
 
+type TPresentation = {
+  event: string;
+  title: string;
+}
+
 export type TSectionItem = {
   title: string;
   subtitle: string;
@@ -68,7 +73,7 @@ export type TSectionItem = {
   description: string;
   skills?: Set<SKILLS>;
   grade?: TGrade;
-  presentations?: string[];
+  presentations?: TPresentation[];
   extracurricular?: string[];
 }
 
@@ -78,7 +83,7 @@ export type TJob = {
   dates: Date | TDeltaTime,
   description: string;
   skills?: Set<SKILLS>
-  presentations?: string[];
+  presentations?: TPresentation[];
   extracurricular?: string[];
 }
 

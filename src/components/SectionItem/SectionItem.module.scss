@@ -56,9 +56,15 @@
   @include devices(fromDesktop) {
     display: flex;
     flex-direction: column;
-    grid-row: 1 / 3;
     height: 100%;
-    margin-top: 0.3rem;
+    
+    &[data-only-child="false"] {
+      grid-row: 1 / 3;
+      margin-top: 0.3rem;
+    }
+    &[data-only-child="true"] {
+      justify-content: center;
+    }
   }
 }
 
@@ -81,6 +87,7 @@
   line-height: 1;
 
   @include devices(fromDesktop) {
+    grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
 }
@@ -117,7 +124,7 @@
     display: flex;
     margin-top: 1rem;
 
-    .extra {
+    .extraSection {
       flex-grow: 1;
     }
 

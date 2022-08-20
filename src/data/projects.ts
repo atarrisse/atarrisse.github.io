@@ -7,14 +7,14 @@ const doutoresDaAlegria: TJob = {
   description: `I was responsible for the implementation of the first digital version of the Balanço Geral of the NGO Doutores da Alegria., using Gatsby, Sass and Vercel. Worked alongside one designer, making sure the designs would be as accessible as possible.`
 }
 const gatsby: TJob = {
-  title: "Documentation Translation",
+  title: "Open Source: Gatsby Documentation Translation",
   company: "[Gatsby PT-BR](https://github.com/gatsbyjs/gatsby-pt-BR)",
   dates: new Date("01/01/2020"),
   description: `Translation of some pages of Gatsby's documentation from English to Portuguese in an attempt to make it accessible to Brazilians.`
 }
 
 const sarajevo: TJob = {
-  title: "Site Translation",
+  title: "Open Source: Letters from Sarajevo Translatiom",
   company: "[Letters from Sarajevo](https://lettersfromsarajevo.com/)",
   dates: new Date("01/01/2020"),
   description: `Translation of the content from English to Portuguese.`
