@@ -47,7 +47,8 @@ export enum SKILLS {
   IA = "Information Architecture",
   ADOBE_ILLUSTRATOR = "Adobe Illustrator",
   DESIGN_THINKING = "Design Thinking",
-  WEB_COMPONENTS = "Web Components"
+  WEB_COMPONENTS = "Web Components",
+  DATA_VISUALIZATION = "Data Visualization"
 }
 
 type TDeltaTime = {
